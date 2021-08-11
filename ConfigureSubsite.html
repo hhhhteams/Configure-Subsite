@@ -1,0 +1,36 @@
+﻿<script type="text/ecmascript" src="/sites/HHHHTeams/Style%20Library/js/angular/Configure%20Subsite/ConfigureSubsite.js"></script>
+<div ng-controller="configureSubsiteController" ng-cloak class="container">
+    <div class="col-md-offset-2 col-md-8 col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading form-group">
+                <h3 class="panel-title">
+                    Create New Subsite
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ng-form name="linkNewForm" novalidate role="form">
+                    <div id="table-wrapper">
+                        <div id="table-scroll">
+                       
+                            <div class="col-sm-12 mt-10">
+                                <label class="full_width">Title<span class="required">*</span></label>
+                                <input id="SubsiteTitle"  class="form-control mt-3" ng-required="true" type="text" placeholder="Enter Subsite Name" ng-model="SubSiteName" autocomplete="off">
+                            </div>
+                        
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+                </ng-form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-primary" ng-disabled="linkNewForm.$error.required" ng-click="CreateSubSite()">Submit</button>
+                    <button type="button" class="btn btn-default" ng-click="ClearControls()">Clear</button>
+                </div>
+            </div>
+        </div>
+   
+
+    </div>
+</div>
